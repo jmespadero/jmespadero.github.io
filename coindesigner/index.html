@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="stylesheets/styles.css">
     <link rel="stylesheet" href="stylesheets/github-light.css">
     <script src="javascripts/scale.fix.js"></script>
+    <script src="javascripts/w3data.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -19,17 +20,7 @@
   </head>
   <body>
     <div class="wrapper">
-      <header>
-        <a href="#"><img src="images/coindesigner.svg" width=90% /></a>
-        <p class="header">Coindesigner is a RAD system to build 3D scenes using Coin3D openInventor.</p>
-
-        <ul>
-          <li class="download"><a class="buttons" href="https://github.com/jmespadero/coindesigner/zipball/master">Download ZIP</a></li>
-          <li class="download"><a class="buttons" href="https://github.com/jmespadero/coindesigner/tarball/master">Download TAR</a></li>
-          <li><a class="buttons github" href="https://github.com/jmespadero/coindesigner">View On GitHub</a></li>
-          <li><a href="#building-from-the-sources-linux">Building</a></li>
-        </ul>
-      </header>
+       <header w3-include-html="header.html"></header>
       <section>
         <h1>
 <a id="coindesigner" class="anchor" href="#coindesigner" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Coindesigner</h1>
@@ -173,13 +164,13 @@ package, compiled by Alejandro Sierra.</p>
 <p>The ivfix code used inside of coindesigner was originally written by 
 the SGI crew, and released as GPL code in 2000. </p>
 
-<p>The qslim program was written by Michael Garland and released under the 
-GPL. The web of the author is <a href="http://mgarland.org">http://mgarland.org</a></p>
+<p>The qslim program was written by <a href="http://mgarland.org">Michael Garland</a> and released under the 
+GPL.
 
 <p>The convex hull calculator is based in QHullLib, which was writen by 
-John W. Ratcliff. It is an adaptation of the qhull program to allow 
-an easy way to use qhull routines using C++, without need to call any
-external program. It's not easy to find the standalone qhulllib code
+John W. Ratcliff. It is an adaptation of <a href="http://www.qhull.org">qhull</a> to allow 
+an easy way to use qhull routines directly from C++, without need to call any
+external program. It's not easy to find the qhulllib code today
 (due broken links :-( ), but it can be found inside ODFRocket, an open
 framework which has Copyright (c) 2004 Open Dynamics Framework Group.
 Please, read README_qhulllib.txt and README_qhull.txt for more details.</p>
@@ -196,6 +187,8 @@ They are the Coin on Coindesigner.</p>
       </footer>
     </div>
     <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+    
+    <script>w3IncludeHTML();</script>
 		
   </body>
 </html>

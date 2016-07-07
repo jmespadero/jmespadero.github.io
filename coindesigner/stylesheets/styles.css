@@ -190,6 +190,13 @@ table {
   margin-bottom: 32px;
   text-align: left;
  }
+ 
+table.no-borders {
+  border: 0px;
+  margin-bottom: 32px;
+  text-align: left;
+ }
+
 
 th {
   font-family: 'Arvo', Helvetica, Arial, sans-serif;
@@ -201,8 +208,7 @@ th {
  }
 
 td {
-  padding: 10px;
-	background: #ccc;
+    vertical-align: middle;
  }
 
 

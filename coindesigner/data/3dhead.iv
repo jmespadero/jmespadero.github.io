@@ -1,0 +1,22 @@
+#Inventor V2.1 ascii
+
+
+Separator {
+
+  SoVolumeData {
+    fields [ SFString fileName, SFEnum storageHint, SFBool usePalettedTexture, SFBool useSharedPalettedTexture, SFBool useCompressedTexture, SFVec3f volumeboxmin, SFVec3f volumeboxmax ]
+    fileName "3dhead.vol"
+
+  }
+  SoTransferFunction {
+    fields [ SFInt32 shift, SFInt32 offset, SFEnum predefColorMap, SFEnum colorMapType, MFFloat colorMap, SFUInt32 remapLow, SFUInt32 remapHigh ]
+    predefColorMap GREY
+    remapLow 0x19
+    remapHigh 0xff
+
+  }
+  SoVolumeRender {
+    fields [ SFEnum interpolation, SFEnum composition, SFBool lighting, SFVec3f lightDirection, SFFloat lightIntensity, SFEnum numSlicesControl, SFInt32 numSlices, SFBool viewAlignedSlices ]
+
+  }
+}
