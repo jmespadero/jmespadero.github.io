@@ -1,0 +1,40 @@
+#Inventor V2.1 ascii
+
+
+Separator {
+
+  Separator {
+
+    Texture2 {
+      filename "earth.jpg"
+
+    }
+    Rotor {
+      rotation 0 0.99999911 0  0.18806961
+      speed 0.5
+      on TRUE
+
+    }
+    Sphere {
+
+    }
+  }
+  Separator {
+
+    Rotor {
+      rotation 0 1 0  2.1427419
+      speed 0.2
+      on TRUE
+
+    }
+    Translation {
+      translation 10 0 0
+
+    }
+    Sphere {
+      radius 0.2
+
+    }
+  }
+}
+
