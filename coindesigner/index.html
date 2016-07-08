@@ -103,8 +103,8 @@ in the current directory.</p>
 
 <p>Usually you can get this packages with the command:</p>
 
-<pre><code>apt-get install g++ bison flex make  
-apt-get install libqt4-dev libsimage-dev libcoin80-dev libdime-dev libsoqt4-dev 
+<pre><code>apt-get install g++ bison flex make
+apt-get install libqt4-dev libsimage-dev libcoin80-dev libdime-dev libsoqt4-dev
 </code></pre>
 
 <p>Optionally, you can use SIM Voleon to visualice volumetric data. Visit 
@@ -118,6 +118,15 @@ apt-get install libqt4-dev libsimage-dev libcoin80-dev libdime-dev libsoqt4-dev
 <pre><code>git clone https://github.com/jmespadero/coindesigner.git
 cd coindesigner
 make -f coindesigner.make 
+</code></pre>
+
+<p>Alternatively, you can use <a href="https://cmake.org/">cmake</a> to build the program:</p>
+
+<pre><code>git clone https://github.com/jmespadero/coindesigner.git
+mkdir coindesigner-build
+cd coindesigner-build
+cmake ../coindesigner
+make
 </code></pre>
 
 <p>To use the translation files, you must run coindesigner in the 
@@ -138,6 +147,16 @@ in the path). You will see if QSLIM executable is found in the "Help-&gt;About" 
 
 <p>Note: If you don't want to compile qslim, you can download binaries from here:
 <a href="http://mgarland.org/software/qslim20.html">http://mgarland.org/software/qslim20.html</a></p>
+
+<h4>
+<a id="tetgen" class="anchor" href="#tetgen" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Tetgen</h4>
+
+<p>TetGen is a program to generate tetrahedral meshes of any 3D polyhedral domains.
+TetGen generates exact constrained Delaunay tetrahedralizations, boundary conforming 
+Delaunay meshes, and Voronoi partitions. To use tetgen, you must download it from 
+<a href="http://wias-berlin.de/software/tetgen">http://wias-berlin.de/software/tetgen</a> 
+and put the executable of tetgen in the same directory of coindesigner (or elsewhere 
+in the path). You will see if tetgen is available in the "help-&gt;About" menu.</p>
 
 <h2>
 <a id="acknowledges" class="anchor" href="#acknowledges" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>ACKNOWLEDGES</h2>
@@ -175,6 +194,9 @@ external program. It's not easy to find the qhulllib code today
 (due broken links :-( ), but it can be found inside ODFRocket, an open
 framework which has Copyright (c) 2004 Open Dynamics Framework Group.
 Please, read README_qhulllib.txt and README_qhull.txt for more details.</p>
+
+<p>The CMakeLists.txt file necessary to build the app using cmake was written by 
+Leopold Palomo-Avellaneda for his own fork of coindesigner.</p>
 
 <p>Last but not least, many fragment of coindesigner are based on examples found in
 the Coin3D and Qt documentation. We would like to acknowledge that work and 
